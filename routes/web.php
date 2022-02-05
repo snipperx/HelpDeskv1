@@ -21,5 +21,6 @@ use Illuminate\Support\Facades\Route;
 //Route::resource('posts','PostController');
 
 Auth::routes();
-Route::get('/', 'DashboardController@index');
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'DashboardController@index')->name('/');
+Route::get('/profile', 'ProfileController@index')->name('profile');
+Route::get('/company_config', 'settings\CompanySettingsController@index')->name('company_config');

@@ -206,7 +206,7 @@
                     <div class="dropdown-body">
                         <ul class="profile-nav p-0 pt-3">
                             <li class="nav-item">
-                                <a href="pages/general/profile.html" class="nav-link">
+                                <a href="{{ url('profile')}}" class="nav-link">
                                     <i data-feather="user"></i>
                                     <span>Profile</span>
                                 </a>

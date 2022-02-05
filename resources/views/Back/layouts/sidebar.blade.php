@@ -1,6 +1,6 @@
 <nav class="sidebar">
     <div class="sidebar-header">
-        <a href="#" class="sidebar-brand">
+        <a href="{{ url('/')}}" class="sidebar-brand">
             HelpDesk<span>V1</span>
         </a>
         <div class="sidebar-toggler not-active">
@@ -13,7 +13,7 @@
         <ul class="nav">
             <li class="nav-item nav-category">Main</li>
             <li class="nav-item">
-                <a href="dashboard-one.html" class="nav-link">
+                <a href="{{ url('/')}}" class="nav-link">
                     <i class="link-icon" data-feather="box"></i>
                     <span class="link-title">Dashboard</span>
                 </a>
@@ -309,10 +309,10 @@
                 <div class="collapse" id="settings-pages">
                     <ul class="nav sub-menu">
                         <li class="nav-item">
-                            <a href="pages/general/blank-page.html" class="nav-link">Blank page</a>
+                            <a href="{{ url('profile')}}" class="nav-link">Profile</a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/general/faq.html" class="nav-link">Faq</a>
+                            <a href="{{ url('company_config')}}" class="nav-link">Company Settings</a>
                         </li>
                         <li class="nav-item">
                             <a href="pages/general/invoice.html" class="nav-link">Invoice</a>

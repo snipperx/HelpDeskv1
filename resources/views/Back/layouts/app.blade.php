@@ -9,7 +9,11 @@
     <!-- core:css -->
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
 </head>
-<body class="sidebar-dark">
+@foreach ($themes as $theme )
+<body class="sidebar-{{$theme->name}}">
+@endforeach
+
+
 <div class="main-wrapper">
 
     <!-- partial:partials/_sidebar.html -->
