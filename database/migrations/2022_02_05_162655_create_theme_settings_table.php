@@ -17,6 +17,7 @@ class CreateThemeSettingsTable extends Migration
             $table->id();
             $table->string('name')->default('dark');
             $table->string('description')->nullable();
+            $table->smallInteger('status')->default(1);
             $table->timestamps();
         });
     }

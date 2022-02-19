@@ -9,9 +9,9 @@
     <!-- core:css -->
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
 </head>
-@foreach ($themes as $theme )
-<body class="sidebar-{{$theme->name}}">
-@endforeach
+
+<body class="sidebar-{{$themes->name}}">
+
 
 
 <div class="main-wrapper">
@@ -28,16 +28,17 @@
 {{--        @include('Back.layouts.settings')--}}
         @include('Back.layouts.header')
         <!-- partial -->
-        @yield('content'))
+        @yield('content')
 
         <!-- partial:partials/_footer.html -->
-@include('Back.layouts.footer')
-        <!-- partial -->
+@include('Back.layouts.footer')@include('Back.layouts.footer')       <!-- partial -->
 
     </div>
+    @include('partials.modalAutoLogout')
 </div>
 
 <script src="{{ asset('js/global.js') }}"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
 <!-- end custom js for this page -->
 </body>
 </html>

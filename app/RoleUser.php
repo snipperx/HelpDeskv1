@@ -4,14 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ThemeSettings extends Model
+class RoleUser extends Model
 {
-    /**
+      /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'destails','status'
+        'role_id', 'user_id'
     ];
 }

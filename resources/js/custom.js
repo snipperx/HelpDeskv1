@@ -1,24 +1,22 @@
 'use strict'
 
-    //Tooltip
-    $('[data-toggle="tooltip"]').tooltip();
 
-    //Vertically center modals on page
-    function reposition() {
-        var modal = $(this),
-            dialog = modal.find('.modal-dialog');
-        modal.css('display', 'block');
+    // //Vertically center modals on page
+    // function reposition() {
+    //     var modal = $(this),
+    //         dialog = modal.find('.modal-dialog');
+    //     modal.css('display', 'block');
 
-        // Dividing by two centers the modal exactly, but dividing by three
-        // or four works better for larger screens.
-        dialog.css("margin-top", Math.max(0, ($(window).height() - dialog.height()) / 2));
-    }
-    // Reposition when a modal is shown
-    $('.modal').on('show.bs.modal', reposition);
-    // Reposition when the window is resized
-    $(window).on('resize', function() {
-        $('.modal:visible').each(reposition);
-    });
+    //     // Dividing by two centers the modal exactly, but dividing by three
+    //     // or four works better for larger screens.
+    //     dialog.css("margin-top", Math.max(0, ($(window).height() - dialog.height()) / 2));
+    // }
+    // // Reposition when a modal is shown
+    // $('.modal').on('show.bs.modal', reposition);
+    // // Reposition when the window is resized
+    // $(window).on('resize', function() {
+    //     $('.modal:visible').each(reposition);
+    // });
 
 
 var warningTimeout = 840000;
@@ -63,5 +61,4 @@ $(document).on('click','#btnStayLoggedIn',function(){
 
 $(document).ready(function(){
     setupTimers();
-
 });

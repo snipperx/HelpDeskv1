@@ -15,7 +15,7 @@
                                 <div class="cover-body d-flex justify-content-between align-items-center">
                                     <div>
                                         <img class="profile-pic" src="https://via.placeholder.com/100x100" alt="profile">
-                                        <span class="profile-name">Amiah Burton</span>
+                                        <span class="profile-name">{{$people->first_name . ' ' . $people->surname }}</span>
                                     </div>
                                     <div class="d-none d-md-block">
                                         <button class="btn btn-primary btn-icon-text btn-edit-profile">
@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="mt-3">
                                     <label class="tx-11 font-weight-bold mb-0 text-uppercase">Email:</label>
-                                    <p class="text-muted">me@nobleui.com</p>
+                                    <p class="text-muted">{{$people->email}} </p>
                                 </div>
                                 <div class="mt-3">
                                     <label class="tx-11 font-weight-bold mb-0 text-uppercase">Website:</label>
